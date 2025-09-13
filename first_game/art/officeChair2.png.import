@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3h7nm02imqfr"
-path="res://.godot/imported/playerGrey_up1.png-3aa61131c0882580ef256c2e63b2c4f5.ctex"
+uid="uid://dbp0qax1oos6y"
+path="res://.godot/imported/officeChair2.png-98063f40b63a3928ae151461d421b8d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://playerGrey_up1.png"
-dest_files=["res://.godot/imported/playerGrey_up1.png-3aa61131c0882580ef256c2e63b2c4f5.ctex"]
+source_file="res://art/officeChair2.png"
+dest_files=["res://.godot/imported/officeChair2.png-98063f40b63a3928ae151461d421b8d2.ctex"]
 
 [params]
 

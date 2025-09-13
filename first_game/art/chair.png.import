@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djxn4bwcob2u1"
-path="res://.godot/imported/playerGrey_walk2.png-f5cfaf08bfb66680dc47cac4becdc491.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://p87odwpf2iib"
+valid=false
 
 [deps]
 
-source_file="res://playerGrey_walk2.png"
-dest_files=["res://.godot/imported/playerGrey_walk2.png-f5cfaf08bfb66680dc47cac4becdc491.ctex"]
+source_file="res://art/chair.png"
 
 [params]
 

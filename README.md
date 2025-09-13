@@ -1,28 +1,28 @@
 Add a README.md to your project that:
 
-[] Gives credit and includes a link to the tutorial you followed
 
-[] Credits any assets you used
-
-Notes how long the tutorial took you to complete
-
---------
+Credit for the tutorial for the original "Dodge the Creeps!" game: https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html
 
 
-For each change:
+The tutorial took me around 4-6 hours
 
-    Make the change in a separate commit with a clear commit message describing what you did.
+## Changes to "Dodge the Creeps!":
 
-    Push your commit to GitHub.
+- Changed title to "Dodge the Clankers!" ~ 3 min
 
-    Update your README.md to describe the change and how long it took.
+- changed background to eggshell white ~ 5 min
+
+- Changed player to an office chair ~ 25 min
+    - Had issues with broken image file
+
+- Changed enemies to Roombas ~ 10 min
+
+- Changed start button font hove color - 3 min
 
 
+### Assets:
+Chair PNG
+    - https://e7.pngegg.com/pngimages/632/383/png-clipart-close-up-of-black-leather-rolling-armchair-office-chair-table-swivel-chair-office-chair-angle-furniture-thumbnail.png
 
--------------------------------------------------------
-
-Credit for original "Dodge the Creeps!" game: https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html
-
-
-Changes to "Dodge the Creeps!"
-
+Roomba PNG:
+    - https://w7.pngwing.com/pngs/652/706/png-transparent-irobot-roomba-880-robotic-vacuum-cleaner-robot-electronics-vacuum-cleaner-cleaning-thumbnail.png

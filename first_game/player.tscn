@@ -1,18 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://djvncog8mek3v"]
+[gd_scene load_steps=5 format=3 uid="uid://djvncog8mek3v"]
 
-[ext_resource type="Texture2D" uid="uid://d3h7nm02imqfr" path="res://playerGrey_up1.png" id="1_hqtel"]
-[ext_resource type="Texture2D" uid="uid://b8fuxln75trsi" path="res://playerGrey_up2.png" id="2_sweqy"]
-[ext_resource type="Texture2D" uid="uid://c46tr10rb53cv" path="res://playerGrey_walk1.png" id="3_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://djxn4bwcob2u1" path="res://playerGrey_walk2.png" id="4_1jxqw"]
+[ext_resource type="Script" uid="uid://cfov1uqm8sns6" path="res://player.gd" id="1_sweqy"]
+[ext_resource type="Texture2D" uid="uid://dbp0qax1oos6y" path="res://art/officeChair2.png" id="2_onrkg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sh265"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_hqtel")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_sweqy")
+"texture": ExtResource("2_onrkg")
 }],
 "loop": true,
 "name": &"up",
@@ -20,27 +15,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_2hs0m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_1jxqw")
+"texture": ExtResource("2_onrkg")
 }],
 "loop": true,
 "name": &"walk",
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dw050"]
-radius = 27.0
-height = 70.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sweqy"]
+radius = 172.0
+height = 552.0
 
 [node name="Player" type="Area2D"]
+position = Vector2(24, 18)
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_sweqy")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(1.15, 1.15)
 sprite_frames = SubResource("SpriteFrames_sh265")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_dw050")
+shape = SubResource("CapsuleShape2D_sweqy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
