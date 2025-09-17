@@ -1,26 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://be3sdkm0kb8jd"]
 
 [ext_resource type="Texture2D" uid="uid://djnpnwy04r7j7" path="res://art/roomba.png" id="1_dy6sc"]
-
-[sub_resource type="GDScript" id="GDScript_pcqmr"]
-script/source = "extends RigidBody2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	var mob_types = Array($AnimatedSprite2D.sprite_frames.get_animation_names())
-	$AnimatedSprite2D.animation = mob_types.pick_random()
-	$AnimatedSprite2D.play()
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-func _on_visible_on_screen_notifier_2d_screen_exited():
-	queue_free()
-"
+[ext_resource type="Script" uid="uid://cjhod1eenuhjc" path="res://mob.gd" id="1_nokgg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yscv0"]
 radius = 30.6667
@@ -56,7 +37,7 @@ animations = [{
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
 collision_mask = 0
 gravity_scale = 0.0
-script = SubResource("GDScript_pcqmr")
+script = ExtResource("1_nokgg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 1)
